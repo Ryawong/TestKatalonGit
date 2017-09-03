@@ -21,15 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://vivblind.play2pay.me/')
+WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
 
-WebUI.setText(findTestObject('login_register/Page_/input_EMAIL'), 'rattanapornya1@gmail.com')
+WebUI.uploadFile(findTestObject('register_volunteer_screen/Page_ -/input_PATH_IMAGE'), 'C:\\Users\\MINT\\git\\TestKatalonGit02\\Data Files\\File_Upload\\Home.png')
 
-WebUI.setText(findTestObject('login_register/Page_/input_password'), 'Mint250831')
-
-WebUI.click(findTestObject('login_register/Page_/button_'))
-
-WebUI.verifyElementText(findTestObject('login_register/Page_ -/div_'), 'ไม่มีกิจกรรม')
-
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

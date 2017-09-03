@@ -28,6 +28,13 @@ System.out.println((char)num);
 String randomString = (char)num;
 String randomEmail = randomString + "@gmail.com";
 
+
+String randomNumber = "";
+for (int i = 0; i < 14; i++) {
+	int number = ran.nextInt(9);
+	randomNumber += number;
+}
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
@@ -48,7 +55,7 @@ WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_LAST_NAME_
 
 WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_BIRTH_DATE'), '25/08/1988')
 
-WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_CITIZEN_ID'), '1-57040-0112-97-7')
+WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_CITIZEN_ID'), randomNumber)
 
 WebUI.selectOptionByValue(findTestObject('register_volunteer_screen/Page_ -/select_RELIGION'), 'พุทธ', true)
 
@@ -74,7 +81,7 @@ WebUI.selectOptionByValue(findTestObject('register_volunteer_screen/Page_ -/sele
 
 WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_ADDRESS_ALL'), '324/94 ม.3 ')
 
-WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_CELL_PHONE'), '0903199414')
+WebUI.setText(findTestObject('register_volunteer_screen/Page_ -/input_CELL_PHONE'), randomNumber)
 
 WebUI.click(findTestObject('register_volunteer_screen/Page_ -/input_btn btn-primary'))
 

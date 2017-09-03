@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test login after register</description>
+   <name>TestLoginVolunteer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d4491b7-8fd6-43b0-9189-14004dffcf77</testCaseGuid>
+</TestCaseEntity>
